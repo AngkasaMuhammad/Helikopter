@@ -1,0 +1,68 @@
+<!--h00000-->
+<!DOCTYPE	html>
+<html>
+	<head>
+		<title>
+			Helikopter
+		</title>
+		<!--
+		<link rel="stylesheet" href="../Poly Landhep/v1/css/object3dview.css"/>
+		<link rel="stylesheet" href="css/Helikopter.css"/>
+		<link id="meshshader" href="../Poly Landhep/v1/js/O3DV-meshshader.wgsl"/>
+		-->
+		<link rel="stylesheet" href="https://angkasamuhammad.github.io/Poly-Landhep/Poly Landhep/v1/css/object3dview.css"/>
+		<link rel="stylesheet" href="css/Helikopter.css"/>
+		
+		<link id="meshshader" href="https://angkasamuhammad.github.io/Poly-Landhep/Poly Landhep/v1/js/O3DV-meshshader.wgsl"/>
+		<link id="tamanbin" href="https://angkasamuhammad.github.io/Poly-Landhep/Poly Landhep/v1/js/taman.bin"/>
+		<link id="rotorwav" href="sound/rotor.wav"/><!-- https://freesound.org/people/UnderlinedDesigns/sounds/172667/ -->
+		<link id="blinkwav" href="sound/blink.wav"/><!-- https://freesound.org/people/Flo_Rayen/sounds/191835/ --> 
+		<link id="hutanwav" href="sound/hutan.wav"/><!-- https://freesound.org/people/klankbeeld/sounds/698356/ -->
+	</head>
+	<body>
+		<canvas id="canv3d" width="1000" height="700"></canvas>
+		<canvas id="canv2d" width="1000" height="700"></canvas>
+		
+		<div id="uihelp">
+			<h2>Helikopter</h2>
+			v1
+			<br/>
+			<br/>
+			<table><tbody id="helptbody">
+				<tr><td>Mouse Click	</td><td>: On/Off putar&zoom kamera	</td></tr>
+				<tr><td>Hold W	</td><td>: Maju	</td></tr>
+				<tr><td>Hold S	</td><td>: Mundur	</td></tr>
+				<tr><td>Hold A	</td><td>: Geser kiri	</td></tr>
+				<tr><td>Hold D	</td><td>: Geser kanan	</td></tr>
+				<tr><td>Hold Q	</td><td>: Naik	</td></tr>
+				<tr><td>Hold E	</td><td>: Turun	</td></tr>
+				<tr><td>Mouse Wheel	</td><td>: Zoom	</td></tr>
+			</tbody></table>
+			<br/>Cari gentong minyak, berikan ke ayunan.
+			<br/>Minyak mengayun ayunan, makin kencang.
+			<br/>Tidak ada gameover.
+			<br/><button id="mulai">Mulai</button>
+			<br/>
+			<span style="
+				color:#00ff00;
+				font-size:80%;
+			">
+				<br/>Game ini menggunakan beberapa source dari <a target="_blank"
+					style="
+						background:#00000088;
+						color:cyan;
+					" href="https://angkasamuhammad.github.io/Poly-Landhep/Poly%20Landhep/v1/Poly%20Landhep%20v1.html">Poly Landhep v1</a>
+				<br/>Gerakan objek menggunakan wgpu-matrix.js
+				<br/>
+			</span>
+			<br/>
+			<div id="scrollberlebih">----------</div>
+		</div>
+		
+		<script src="https://angkasamuhammad.github.io/Poly-Landhep/Poly Landhep/v1/js/wgpu-matrix.js"></script>
+		<script src="https://angkasamuhammad.github.io/Poly-Landhep/Poly Landhep/v1/js/rumus.js"></script>
+		<script src="https://angkasamuhammad.github.io/Poly-Landhep/Poly Landhep/v1/js/readbin.js"></script>
+		<script src="https://angkasamuhammad.github.io/Poly-Landhep/Poly Landhep/v1/js/O3DV.js"></script>
+		<script src="js/loadtaman.js"></script>
+	</body>
+</html>
